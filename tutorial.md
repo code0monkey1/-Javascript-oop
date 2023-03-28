@@ -155,5 +155,5 @@ therefore count remains available
 for future access.*/
  ```
 
-`We need to be super cautious while creating closures
-`
+>**We need to be super cautious while creating closures
+because all the reference variables of that closure's scope will not be garbage collected till you are using it i.e , till there is a  reference to that closure**
