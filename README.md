@@ -271,3 +271,5 @@ const developer =new SoftwareDeveloper()
 // current object
 
 ```
+
+### Difference between an object created using a constructor function vs one created using the object literal notation
