@@ -104,3 +104,24 @@ alertThenReturn()();
 ## Callback Function
 
 *A function that is passed as an argument into another function is called a callback function.*
+
+---
+
+### Closure
+
+```javascript
+const myName = 'Andrew';
+
+function introduceMyself() {
+  const you = 'student';
+
+  function introduce() {
+    console.log(`Hello, ${you}, I'm ${myName}!`);
+  }
+
+  return introduce();
+}
+
+introduceMyself();
+// 'Hello, student, I'm Andrew!'
+```
