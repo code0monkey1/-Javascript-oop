@@ -46,7 +46,7 @@ window.learnSomethingNew === learnSomethingNew
 >
 > (i.e., it's globally accessible and not written inside another function) makes it accessible to your code as either learnSomethingNew() or window.learnSomethingNew().
 
-### *Functions in Javascript vs Other Languages*
+## Functions in Javascript vs Other Languages
 
 ![Functions in Javascript vs Other Languages ][1]
 > If a programming language has `first class function`
