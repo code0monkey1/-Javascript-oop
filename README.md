@@ -300,3 +300,7 @@ i .e :
 
 // this still works the same way
 ```
+
+#### `this` keyword and constructor functions
+
+> when invoking a constructor function with the new operator, `this` gets set to the newly-created object
