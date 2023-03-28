@@ -167,6 +167,7 @@ because all the reference variables of that closure's scope will not be garbage 
 ###### Passing Arguments into IIFE's
 
 ```javascript
+Ex 1: 
 
 (function (name){
           alert(`Hi, ${name}`);
@@ -174,6 +175,17 @@ because all the reference variables of that closure's scope will not be garbage 
 )('Andrew');
 
 //// alerts 'Hi, Andrew'
+
+------------------------------------------------
+Ex 2 : 
+
+(function (x, y){
+    console.log(x * y);
+  }
+)(2, 3);
+
+// 6
 ```
 
-*The second pair of parentheses not only immediately executes the function preceding it -- it's also the place to put any arguments that the function may need! We pass in the string 'Andrew', which is stored in the function expression's name variable. It is then immediately invoked, alerting the message 'Hi, Andrew' onto the screen.*
+*The second pair of parentheses not only immediately executes the function preceding it -- it's also the place to put any arguments that the function may need!<br><br>
+We pass in the string 'Andrew', which is stored in the function expression's name variable. It is then immediately invoked, alerting the message 'Hi, Andrew' onto the screen.*
