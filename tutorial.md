@@ -157,3 +157,23 @@ for future access.*/
 
 >**We need to be super cautious while creating closures
 because all the reference variables of that closure's scope will not be garbage collected till you are using it i.e , till there is a  reference to that closure**
+
+---
+
+## Immediately-Invoked Function Expressions
+>
+>A function that is called immediately after it is defined
+
+###### Passing Arguments into IIFE's
+
+```javascript
+
+(function (name){
+          alert(`Hi, ${name}`);
+    }
+)('Andrew');
+
+//// alerts 'Hi, Andrew'
+```
+
+*The second pair of parentheses not only immediately executes the function preceding it -- it's also the place to put any arguments that the function may need! We pass in the string 'Andrew', which is stored in the function expression's name variable. It is then immediately invoked, alerting the message 'Hi, Andrew' onto the screen.*
