@@ -134,7 +134,9 @@ introduceMyself();
 
 ##### The problem with closures and javascript garbage collection
 
- 1. We know that the variables of a parent function are accessible to the nested, inner function. If the nested function captures and uses its parent's variables (or variables along the scope chain, such as its parent's parent's variables), those variables will stay in memory as long as the functions that utilize them can still be referenced.
+ > We know that the variables of a parent function are accessible to the nested, inner function.
+
+ >If the nested function captures and uses its parent's variables (or variables along the scope chain, such as its parent's parent's variables), those variables will stay in memory as long as the functions that utilize them can still be referenced.
 
  ```javascript
 
@@ -146,5 +148,10 @@ introduceMyself();
     return count;
   };
 }
-The existence of the nested function keeps the count variable from being available for garbage collection, therefore count remains available for future access.
+
+/*The existence of the nested function 
+keeps the count variable from being
+ available for garbage collection, 
+therefore count remains available 
+for future access.*/
  ```
