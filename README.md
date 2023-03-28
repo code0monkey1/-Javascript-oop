@@ -245,3 +245,19 @@ button.addEventListener('click',(function(){
 
 1. These are special functions that are called before
 the creation of a new class.
+
+1. They do not need to return the reference
+   to the object , as it's done automatically
+   in this special function
+
+```javascript
+
+      Eg : 
+      
+      function SoftwareDeveloper() {
+        this.favoriteLanguage = 'JavaScript';
+      }
+     
+ ```
+
+3. In the previous
