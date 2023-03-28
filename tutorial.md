@@ -237,3 +237,7 @@ button.addEventListener('click',(function(){
 + [JS](./button.js "javascript button code")
 
 + [Button Component](./button.html "html button component")
+
+------------------------------------------------
+
+# Constructor Functions
