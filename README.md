@@ -281,3 +281,5 @@ const developer =new SoftwareDeveloper()
 [2]:./proto.jpg "object literal vs constructor"
 
 >The constructor of the object literal is Object , whereas that of the one using the constructor function , is the name of the constructor
+
+*Capitalizing the first letter of a constructor function's name is just a naming convention. Though the first letter should be capitalized, inadvertently leaving it lower-cased still makes the constructor function (i.e., when invoked with the new operator, etc.).*
