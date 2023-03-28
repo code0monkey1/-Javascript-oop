@@ -304,3 +304,5 @@ i .e :
 #### `this` keyword and constructor functions
 
 > when invoking a constructor function with the new operator, `this` gets set to the newly-created object
+>
+> when you say this in a method, what you're really saying is "this object" or "the object at hand.
