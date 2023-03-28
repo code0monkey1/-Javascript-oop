@@ -333,6 +333,26 @@ Actual Object Created :
 
 1. First, calling a constructor function with the new keyword sets this to a newly-created object
 
+        function Cat(name) {
+           this.name = name;
+           this.sayName = function () {
+             console.log(`Meow! My name is ${this.name}`);
+         };
+        }
+
+        const bailey = new Cat('Bailey');
+
+        ----
+         
+        Actual Object Created :
+
+              {
+        name: 'Bailey',
+        sayName: function () {
+          console.log(`Meow! My name is ${this.name}`);
+        }
+      }
+
 2. On the other hand, calling a function that belongs to an object (i.e., a method) sets this to the object itself
 
        const dog = {
