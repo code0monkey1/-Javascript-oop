@@ -283,3 +283,20 @@ const developer =new SoftwareDeveloper()
 >The constructor of the object literal is Object , whereas that of the one using the constructor function , is the name of the constructor
 
 *Capitalizing the first letter of a constructor function's name is just a naming convention. Though the first letter should be capitalized, inadvertently leaving it lower-cased still makes the constructor function (i.e., when invoked with the new operator, etc.).*
+
+i .e :
+
+```javascript
+
+  function softwareDeveloper() {
+        this.favoriteLanguage = 'JavaScript';
+      }
+
+  const developer = new softwareDeveloper();
+
+  console.log(developer.favoriteLanguage)
+
+  console.log(developer)
+
+// this still works the same way
+```
