@@ -195,3 +195,13 @@ Ex 2 :
 We pass in the string 'Andrew', which is stored in the function expression's name variable. It is then immediately invoked, alerting the message 'Hi, Andrew' onto the screen.*
 
 *Again , in  Ex 2: -- the arguments passed into the anonymous function (i.e., 2 and 3) belong in trailing set of parentheses.*
+
+>_Say that we want to create a button on a page that alerts the user on every other click. One way to begin doing this would be to keep track of the number of times that the button was clicked. But how should we maintain this data?
+We could keep track of the count with a variable that we declare in the global scope (this would make sense if other parts of the application need access to the count data).
+However, an even better approach would be to enclose this data in event handler itself!_
+>
+>*For one, this approach prevents us from polluting the global with extra variables (and potentially variable name collisions). What's more: if we use an IIFE, we can leverage a closure to protect the count variable from being accessed externally! This prevents any accidental mutations or unwanted side-effects from inadvertently altering the count.*
+
+[JS](./button.js "javascript button code")
+
+[Button Component](./button.html "html button component")
