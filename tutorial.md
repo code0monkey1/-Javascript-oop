@@ -164,6 +164,8 @@ because all the reference variables of that closure's scope will not be garbage 
 >
 >A function that is called immediately after it is defined
 
+`One of the primary uses for IIFE's is to create private scope (i.e., private state).`
+
 ###### Passing Arguments into IIFE's
 
 ```javascript
@@ -176,7 +178,7 @@ Ex 1:
 
 //// alerts 'Hi, Andrew'
 
-------------------------------------------------
+-------------------------------------
 Ex 2 : 
 
 (function (x, y){
