@@ -132,7 +132,7 @@ introduceMyself();
 // in global scope
 ```
 
-##### The problem with closures and javascript garbage collection
+###### The problem with closures and javascript garbage collection
 
  > We know that the variables of a parent function are accessible to the nested, inner function.
 
