@@ -262,7 +262,7 @@ the creation of a new class.
 
 3. In the previous code , theSoftwareDeveloper function is a `constructor function` , which is
    not returning anything , but when called with
-   new , it returns the reference to the current object
+   new , it returns the reference to a newly created object with `favoriteLanguage as Javascript`
 
 ```javascript
 const developer =new SoftwareDeveloper()

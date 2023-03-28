@@ -5,3 +5,5 @@
   const developer = new SoftwareDeveloper();
 
   console.log(developer.favoriteLanguage)
+
+  console.log(developer)
