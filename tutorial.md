@@ -166,6 +166,8 @@ because all the reference variables of that closure's scope will not be garbage 
 
 `One of the primary uses for IIFE's is to create private scope (i.e., private state).`
 
+`because the function expressed is called immediately, the IIFE wraps up the code nicely so that we don't pollute the global scope.`
+
 ###### Passing Arguments into IIFE's
 
 ```javascript
