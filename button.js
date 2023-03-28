@@ -1,5 +1,6 @@
+const button = document.getElementById('button');
 
-let button=(function(){
+button.addEventListener('click',(function(){
    let count =0;
 
    return function(){
@@ -7,4 +8,4 @@ let button=(function(){
 
      alert("The count is " + count)
    }
-})()
+})())
