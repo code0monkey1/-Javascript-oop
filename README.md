@@ -335,6 +335,16 @@ Actual Object Created :
 
 2. On the other hand, calling a function that belongs to an object (i.e., a method) sets this to the object itself
 
+       const dog = {
+          bark: function () {
+            console.log('Woof!');
+          },
+          barkTwice: function () {
+            this.bark();
+            this.bark();
+          }
+        };
+  
 3. Third, calling a function on its own (i.e., simply invoking a regular function) will set this to window, which is the global object if the host environment is the browser.
 
     ```javascript
