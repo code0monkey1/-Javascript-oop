@@ -6,4 +6,4 @@
 
   console.log(developer.favoriteLanguage)
 
-  console.log(developer)
+  console.log(developer) 
