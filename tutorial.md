@@ -189,3 +189,5 @@ Ex 2 :
 
 *The second pair of parentheses not only immediately executes the function preceding it -- it's also the place to put any arguments that the function may need!<br><br>
 We pass in the string 'Andrew', which is stored in the function expression's name variable. It is then immediately invoked, alerting the message 'Hi, Andrew' onto the screen.*
+
+*Again , in  Ex 2: -- the arguments passed into the anonymous function (i.e., 2 and 3) belong in trailing set of parentheses.*
