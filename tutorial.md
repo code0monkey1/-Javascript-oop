@@ -123,5 +123,9 @@ function introduceMyself() {
 }
 
 introduceMyself();
+
 // 'Hello, student, I'm Andrew!'
+// this closure retails the scope of it's
+// creation i.e where myName = 'Andrew' 
+// in global scope
 ```
