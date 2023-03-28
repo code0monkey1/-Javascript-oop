@@ -206,6 +206,20 @@ However, an even better approach would be to enclose this data in event handler 
 >
 >*For one, this approach prevents us from polluting the global with extra variables (and potentially variable name collisions). What's more: if we use an IIFE, we can leverage a closure to protect the count variable from being accessed externally! This prevents any accidental mutations or unwanted side-effects from inadvertently altering the count.*
 
+```javascript
+const button = document.getElementById('button');
+
+button.addEventListener('click',(function(){
+   let count =0;
+
+   return function(){
+     count++;
+
+     alert("The count is " + count)
+   }
+})())
+```
+
 [JS](./button.js "javascript button code")
 
 [Button Component](./button.html "html button component")
