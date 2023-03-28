@@ -260,4 +260,14 @@ the creation of a new class.
      
  ```
 
-3. In the previous
+3. In the previous code , theSoftwareDeveloper function is a `constructor function` , which is
+   not returning anything , but when called with
+   new , it returns the reference to the current object
+
+```javascript
+const developer =new SoftwareDeveloper()
+
+// here , developer has access to the 
+// current object
+
+```
