@@ -272,4 +272,12 @@ const developer =new SoftwareDeveloper()
 
 ```
 
-### Difference between an object created using a constructor function vs one created using the object literal notation
+> Difference between an object created using a constructor function vs one created using the object literal notation
+
+<br>
+
+![ObjectLiteral vs Constructor][2]
+
+[2]:./proto.jpg "object literal vs constructor"
+
+>The constructor of the object literal is Object , whereas that of the one using the constructor function , is the name of the constructor
