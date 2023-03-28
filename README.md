@@ -337,13 +337,12 @@ Actual Object Created :
 
 1. Third, calling a function on its own (i.e., simply invoking a regular function) will set this to window, which is the global object if the host environment is the browser.
 
-```javascript
-function funFunction() {
-  return this;
-}
+    ```javascript
+    function funFunction() {
+      return this;
+    }
+    funFunction();
+    // (returns the global object, `window`)
+    ```
 
-```
-
-funFunction();
-// (returns the global object, `window`)
-The fourth way to call functions allows us to set this ourselves!
+1. The fourth way to call functions allows us to set this ourselves!
