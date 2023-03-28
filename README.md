@@ -328,3 +328,22 @@ Actual Object Created :
 ```
 >
 > when you say this in a method, what you're really saying is "this object" or "the object at hand.
+
+#### There are four ways to call functions, and each way sets this differently
+
+1. First, calling a constructor function with the new keyword sets this to a newly-created object. Recall that creating an instance of Cat earlier had set this to the new bailey object.
+
+1. On the other hand, calling a function that belongs to an object (i.e., a method) sets this to the object itself. Recall that earlier, the dog object's barkTwice() method was able to access properties of dog itself.
+
+1. Third, calling a function on its own (i.e., simply invoking a regular function) will set this to window, which is the global object if the host environment is the browser.
+
+```javascript
+function funFunction() {
+  return this;
+}
+
+```
+
+funFunction();
+// (returns the global object, `window`)
+The fourth way to call functions allows us to set this ourselves!
