@@ -304,5 +304,27 @@ i .e :
 #### `this` keyword and constructor functions
 
 > when invoking a constructor function with the new operator, `this` gets set to the newly-created object
+
+```javascript
+function Cat(name) {
+ this.name = name;
+ this.sayName = function () {
+   console.log(`Meow! My name is ${this.name}`);
+ };
+}
+
+const bailey = new Cat('Bailey');
+
+----
+
+Actual Object Created :
+
+{
+  name: 'Bailey',
+  sayName: function () {
+    console.log(`Meow! My name is ${this.name}`);
+  }
+}
+```
 >
 > when you say this in a method, what you're really saying is "this object" or "the object at hand.
