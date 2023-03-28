@@ -135,7 +135,6 @@ introduceMyself();
 ###### The problem with closures and javascript garbage collection
 
  > We know that the variables of a parent function are accessible to the nested, inner function.
-
  >If the nested function captures and uses its parent's variables (or variables along the scope chain, such as its parent's parent's variables), those variables will stay in memory as long as the functions that utilize them can still be referenced.
 
  ```javascript
@@ -155,3 +154,6 @@ keeps the count variable from being
 therefore count remains available 
 for future access.*/
  ```
+
+`We need to be super cautious while creating closures
+`
