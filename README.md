@@ -242,3 +242,6 @@ button.addEventListener('click',(function(){
 ------------------------------------------------
 
 # Constructor Functions
+
+1. These are special functions that are called before
+the creation of a new class.
