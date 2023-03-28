@@ -109,6 +109,8 @@ alertThenReturn()();
 
 ### Closure
 
+> A JavaScript closure makes it possible for a function to have "private" variables.
+
 ```javascript
 const myName = 'Andrew';
 
