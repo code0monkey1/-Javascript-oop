@@ -6,3 +6,17 @@ const dog={
     this.age++;
   }
 }
+
+function invokeTwice(cb) {
+  
+  cb()
+  cb()
+
+}
+
+
+invokeTwice(function(){
+  dog.growOneYear()
+})
+
+console.log("Dog's age is",dog.age)
