@@ -467,4 +467,6 @@ Actual Object Created :
 
         call() may be limited if you don't know ahead of time the number of arguments that the function needs. In this case, apply() would be a better option, since it simply takes an array of arguments, then unpacks them to pass along to the function.
 
-     3. Bind ( )
+     3. Bind :
+
+         >   bind() returns a new function that, when called, has this set to the value we give it.
