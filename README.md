@@ -376,3 +376,7 @@ Actual Object Created :
     ```
 
 4. The fourth way to call functions allows us to set this ourselves!
+
+     + Call ( )
+     + Apply ( )
+     + Bind ( )
