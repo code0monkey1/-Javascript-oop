@@ -407,10 +407,30 @@ Actual Object Created :
               "borrow" a method
               from one object --
               then use it for
-              another object!
-              Check out the
-              following object,
-              mockingbird:
+              another object
+
+              const mockingbird={
+               title:"To kill a Mockingbird",
+               describe:function(){
+                console.log(` ${this.title} is a classic novel`)
+               }
+            }
+            
+            
+            mockingbird.describe()
+            
+            // Result : To kill a Mockingbird 
+            is a classic novel
+            
+            const harrypotter={
+              title:"Harry Potter"
+            }
+            
+            mockingbird.describe
+            .call(harrypotter)
+            
+            Result :  Harry Potter 
+            is a classic novel
 
      2. Apply ( )
      3. Bind ( )
