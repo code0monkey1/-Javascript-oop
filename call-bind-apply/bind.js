@@ -29,6 +29,9 @@ function invokeTwice(cb) {
 
 const bound = dog.growOneYear.bind(dog)
 
+// Here the function's context i.e this is 
+// explicitly bound to the dog object
+
 invokeTwice(bound)
 
 console.log("Dog's age is",dog.age)
