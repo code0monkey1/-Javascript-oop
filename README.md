@@ -443,4 +443,8 @@ Actual Object Created :
             created 
 
      2. Apply ( )
+
+        The apply() method does the same this as
+        the call method, albeit with differences in how arguments are passed into it.
+
      3. Bind ( )
