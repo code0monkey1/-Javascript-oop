@@ -329,7 +329,7 @@ Actual Object Created :
 >
 > when you say this in a method, what you're really saying is "this object" or "the object at hand.
 
-#### There are four ways to call functions, and each way sets this differently
+#### There are four ways to call functions, and each way sets `this` differently
 
 1. First, calling a constructor function with the new keyword sets this to a newly-created object
 
@@ -375,7 +375,7 @@ Actual Object Created :
     // (returns the global object, `window`)
     ```
 
-4. The fourth way to call functions allows us to set this ourselves!
+4. The fourth way to call functions, allows us to set `this` ourselves using :
 
      + Call ( )
      + Apply ( )
