@@ -636,3 +636,9 @@ console.log(inherited);
 // false
 
 ```
+
+#### isPrototypeOf()
+
+>Objects also have access to the isPrototypeOf() method, which checks whether or not an object exists in another object's prototype chain.
+
+>Using this method, you can confirm if a particular object serves as the prototype of another object.
