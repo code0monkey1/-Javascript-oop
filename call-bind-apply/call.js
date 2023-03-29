@@ -25,3 +25,6 @@ const harrypotter={
 }
 
 mockingbird.describe.call(harrypotter)
+
+// Now in this case , we bound one method call
+// to another object's this context
