@@ -564,5 +564,17 @@ will have a new sayName function created for it.
     to the same function, hence the space 
     for a new function will be saved , plus DRY
     principle will be followed.
+    
+      function Cat(name) {
+       this.name=name;
+     
+      }
 
+
+    
+    In this example , you're attaching the 
+    sayName function to the constructor function, 
+    so every object created using new Cat() , 
+    will have a new sayName function created for it.
+  
 #### Prototype Chain
