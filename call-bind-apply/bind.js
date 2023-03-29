@@ -13,6 +13,20 @@ function invokeTwice(cb) {
   cb()
 }
 
+//invokeTwice(dog.growOneYear)
+
+// this will not increment the dog's age
+// as this will be bound to the global object,
+// as the state was not preserved
+
+// invokeTwice(function() {
+//   dog.growOneYear();
+// })
+
+// In the previous case , the closure captures 
+// the State , because of which growOneYear
+// will be bound to the dog object
+
 const bound = dog.growOneYear.bind(dog)
 
 invokeTwice(bound)
