@@ -474,6 +474,63 @@ Actual Object Created :
          This is generally used when you want to
          pass a function as a callback function , and you want to explicitly define what `this` would be referring to when calling the callback function.
 
-         [Click to seeExample of Using Bind][3]
+         [Click to see Example of Using Bind][3]
+
+         ---
+         //  bind() returns a new function that, when called, has this set to the value we give it.
+
+          ```javascript
+              const dog={
+                age :5,
+                growOneYear:function(){
+                  this.age++;
+                }
+              }
+              
+              function invokeTwice(cb) {
+                
+                cb()
+                cb()
+              }
+              
+              //invokeTwice(dog.growOneYear)
+              
+              // this will not increment the dog's age
+              // as this will be bound to the global object,
+              // as the state was not preserved
+              
+              // invokeTwice(function() {
+              //   dog.growOneYear();
+              // })
+              
+              // In the previous case , the closure captures 
+              // the State , because of which growOneYear
+              // will be bound to the dog object
+              
+              const bound = dog.growOneYear.bind(dog)
+              
+              // Here the function's context i.e this is 
+              // explicitly bound to the dog object
+              
+              invokeTwice(bound)
+              
+              console.log("Dog's age is",dog.age)
+              
+              const driver = {
+                name: 'Danica',
+                displayName: function () {
+                  console.log(`Name: ${this.name}`);
+                }
+              };
+              
+              const car = {
+                name: 'Fusion'
+              };
+              
+              const driverBound= driver.displayName.bind(car)
+              
+              invokeTwice(driverBound)
+
+          ```
 
 [3]:./call-bind-apply/bind.js "bind example"
