@@ -381,12 +381,13 @@ Actual Object Created :
               the first argument is the thing you
               want this to be bound to and the next few arguments are the original argument variables of the function that are to be called
 
-                      ```javascript
-        
+    ```javascript
+      
                       
-                      eg :
+     eg :
         
-                      
-                      ```
+                                 
+    ```
+
      + Apply ( )
      + Bind ( )
