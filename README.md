@@ -606,7 +606,9 @@ will have a new sayName function created for it.
 
 > *hasOwnProperty() allows you to find the origin of a particular property*
 
-*Upon passing in a string of the property name you're looking for, the method will return a boolean indicating whether or not the property belongs to the object itself (i.e., that property was not inherited)*
+  *Upon passing in a string of the property name you're looking for, the method will return a boolean indicating whether or not the property belongs to the object itself (i.e., that property was not inherited)*
+
+> Using hasOwnProperty(), we gain insight about a certain property's origins.
 
 ```javascript
 function Phone() {
@@ -624,4 +626,13 @@ const own = myPhone.hasOwnProperty('operatingSystem');
 
 console.log(own);
 // true
+
+----------------------------------------------------------------
+
+What about the screenSize property, which exists on Phone objects' prototype?
+
+const inherited = myPhone.hasOwnProperty('screenSize');
+
+console.log(inherited);
+// false
 ```
