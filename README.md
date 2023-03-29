@@ -377,6 +377,16 @@ Actual Object Created :
 
 4. The fourth way to call functions, allows us to set `this` ourselves using :
 
-     + Call ( )
+     + Call - This is called on a function, where
+              the first argument is the thing you
+              want this to be bound to and the next few arguments are the original argument variables of the function that are to be called
+
+                      ```javascript
+        
+                      
+                      eg :
+        
+                      
+                      ```
      + Apply ( )
      + Bind ( )
