@@ -533,7 +533,9 @@ Actual Object Created :
 
           ```
 
-##### Adding functions to the constructor vs prototype
+##### **Adding functions to the Constructor function vs to the Prototype**
+
+---
 
 ```javascript
 function Cat(name) {
@@ -545,6 +547,14 @@ function Cat(name) {
  };
 }
 
+In this example , you're attaching the 
+sayName function to the constructor function, 
+so every object created using new Cat() , 
+will have a new sayName function created for it.
 ```
+
+If we attach the same , `sayName` function to the prototype of cat , then all objects created using
+cat , will have reference to the same function, hence the space for a new function will be saved , plus DRY
+principle will be followed.
 
 [3]:./call-bind-apply/bind.js "bind example"
