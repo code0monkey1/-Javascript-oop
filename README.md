@@ -375,7 +375,9 @@ Actual Object Created :
     // (returns the global object, `window`)
     ```
 
-4. The fourth way to call functions, allows us to set `this` ourselves using :
+4. The fourth way to call functions, allows us to set `this` ourselves using
+
+   ---
 
      + Call - This is called on a function, where
               the first argument is the thing you
@@ -383,10 +385,17 @@ Actual Object Created :
 
     ```javascript
       
-     function add(a,b){
-           return a+b
-      }
+       function add(a,b){
+             return a+b
+        }
         
+        const result = add.call(this,2,4)
+             // 6 
+  
+        Here ,the first argument is 
+        the context of this, the second 
+        and third arguments are the args 
+        that the function was called with
                                  
     ```
 
