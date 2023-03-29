@@ -608,15 +608,12 @@ will have a new sayName function created for it.
 
   *Upon passing in a string of the property name you're looking for, the method will return a boolean indicating whether or not the property belongs to the object itself (i.e., that property was not inherited)*
 
-> Using hasOwnProperty(), we gain insight about a certain property's origins.
-
 ```javascript
 function Phone() {
   this.operatingSystem = 'Android';
 }
 
 Phone.prototype.screenSize = 6;
-
 
 ----------------------------------------------------------------
 
@@ -629,10 +626,13 @@ console.log(own);
 
 ----------------------------------------------------------------
 
-What about the screenSize property, which exists on Phone objects' prototype?
+What about the screenSize property, 
+which exists on Phone objects'
+prototype?
 
 const inherited = myPhone.hasOwnProperty('screenSize');
 
 console.log(inherited);
 // false
+
 ```
