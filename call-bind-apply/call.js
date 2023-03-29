@@ -18,3 +18,10 @@ const mockingbird={
 
 
 mockingbird.describe()
+
+
+const harrypotter={
+  title:"Harry Potter"
+}
+
+mockingbird.describe.call(harrypotter)
