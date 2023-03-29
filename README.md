@@ -599,3 +599,11 @@ will have a new sayName function created for it.
   >3. If the property doesn't exist in the prototype, the JavaScript engine will continue looking up the chain.
 
   >4. At the very end of the chain is the Object() object, or the top-level parent. If the property still cannot be found, the property is undefined.
+
+---
+
+#### hasOwnProperty()
+
+> *hasOwnProperty() allows you to find the origin of a particular property*
+
+*Upon passing in a string of the property name you're looking for, the method will return a boolean indicating whether or not the property belongs to the object itself (i.e., that property was not inherited)*
