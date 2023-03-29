@@ -1,6 +1,6 @@
 function add(one,two,three) {
 
-  const result =0
+  const result =one + two + three;
 
   console.log("The result is: " + result)
 }
