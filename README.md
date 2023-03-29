@@ -607,3 +607,21 @@ will have a new sayName function created for it.
 > *hasOwnProperty() allows you to find the origin of a particular property*
 
 *Upon passing in a string of the property name you're looking for, the method will return a boolean indicating whether or not the property belongs to the object itself (i.e., that property was not inherited)*
+
+```javascript
+function Phone() {
+  this.operatingSystem = 'Android';
+}
+
+Phone.prototype.screenSize = 6;
+
+
+----------------------------------------------------------------
+
+const myPhone = new Phone();
+
+const own = myPhone.hasOwnProperty('operatingSystem');
+
+console.log(own);
+// true
+```
