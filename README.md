@@ -473,3 +473,7 @@ Actual Object Created :
 
          This is generally used when you want to
          pass a function as a callback function , and you want to explicitly define what `this` would be referring to when calling the callback function.
+
+         [Click to seeExample of Using Bind][3]
+
+[3]:./call-bind-apply/bind.js "bind example"
