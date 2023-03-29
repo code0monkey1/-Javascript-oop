@@ -569,9 +569,11 @@ will have a new sayName function created for it.
        this.name=name;
      
       }
+      
+      Cat.prototype.sayName=function () {
+       console.log(`Meow! My name is ${this.name}`);
+     };
 
-
-    
     In this example , you're attaching the 
     sayName function to the constructor function, 
     so every object created using new Cat() , 
