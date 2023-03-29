@@ -555,8 +555,14 @@ so every object created using new Cat() ,
 will have a new sayName function created for it.
 ```
 
-If we attach the same , `sayName` function to the prototype of cat , then all objects created using
-cat , will have reference to the same function, hence the space for a new function will be saved , plus DRY
-principle will be followed.
+#### Advantage of using prototypal inheritance over Class based inheritance
+
+---
+    If we attach the same , `sayName` function 
+    to the prototype of cat , then all objects 
+    created using cat , will have reference
+    to the same function, hence the space 
+    for a new function will be saved , plus DRY
+    principle will be followed.
 
 #### Prototype Chain
