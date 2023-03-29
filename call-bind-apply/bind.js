@@ -35,3 +35,18 @@ const bound = dog.growOneYear.bind(dog)
 invokeTwice(bound)
 
 console.log("Dog's age is",dog.age)
+
+const driver = {
+  name: 'Danica',
+  displayName: function () {
+    console.log(`Name: ${this.name}`);
+  }
+};
+
+const car = {
+  name: 'Fusion'
+};
+
+const driverBound= driver.displayName.bind(car)
+
+invokeTwice(driverBound)
