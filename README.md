@@ -447,7 +447,23 @@ Actual Object Created :
         The apply() method does the same this as
         the call method, albeit with differences in how arguments are passed into it.
 
+        Eg:
+
         >**So, when to use apply over call ?**
+
+        ```javascript
+        
+            function add(a,b){
+                return a+b
+                }
+        
+            const result = add
+            .call(this,[2,4])
+
+         //the only difference using call is ,
+         //that we're passing args in an array
+         //rather than individually
+        ```
 
         call() may be limited if you don't know ahead of time the number of arguments that the function needs. In this case, apply() would be a better option, since it simply takes an array of arguments, then unpacks them to pass along to the function.
 
