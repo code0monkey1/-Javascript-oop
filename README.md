@@ -447,4 +447,8 @@ Actual Object Created :
         The apply() method does the same this as
         the call method, albeit with differences in how arguments are passed into it.
 
+        >**So, when to use apply over call ?**
+
+        call() may be limited if you don't know ahead of time the number of arguments that the function needs. In this case, apply() would be a better option, since it simply takes an array of arguments, then unpacks them to pass along to the function.
+
      3. Bind ( )
