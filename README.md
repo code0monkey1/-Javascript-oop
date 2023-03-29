@@ -472,5 +472,4 @@ Actual Object Created :
          >   bind() returns a new function that, when called, has this set to the value we give it.
 
          This is generally used when you want to
-         pass a function as a callback function , and you want to preserve the state of the this
-         variable.
+         pass a function as a callback function , and you want to explicitly define what `this` would be referring to when calling the callback function.
