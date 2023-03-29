@@ -558,13 +558,17 @@ will have a new sayName function created for it.
 #### Advantage of using prototypal inheritance over Class based inheritance
 
 ---
-    If we attach the same , `sayName` function 
-    to the prototype of cat , then all objects 
+   > If we attach the same , `sayName` function
+    to the prototype of cat , then all objects
     created using cat , will have reference
-    to the same function, hence the space 
+    to the same function, hence the space
     for a new function will be saved , plus DRY
     principle will be followed.
-    
+
+   > Along with being more efficient, we also
+    don't have to update all objects individually
+    should be decide to change a method.
+
       function Cat(name) {
        this.name=name;
      
