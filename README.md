@@ -458,7 +458,7 @@ Actual Object Created :
                 }
         
             const result = add
-            .call(this,[2,4])
+            .apply(this,[2,4])
 
          //the only difference using call is ,
          //that we're passing args in an array
