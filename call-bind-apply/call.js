@@ -7,3 +7,10 @@ console.log(add.call(this,2,4))
 module.exports= add
 
 console.log(this)
+
+
+const mockingbird={
+   title:"To kill a Mockingbird",
+   
+
+}
