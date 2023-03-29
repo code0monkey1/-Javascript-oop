@@ -432,5 +432,15 @@ Actual Object Created :
             Result :  Harry Potter 
             is a classic novel
 
+            Here, using call , 
+            we can see that
+            we changed the context
+            of this to
+            the harrypotter object
+            , instead of
+            the mockingbird object
+            where it was originally
+            created 
+
      2. Apply ( )
      3. Bind ( )
