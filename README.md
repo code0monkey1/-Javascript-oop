@@ -533,6 +533,8 @@ Actual Object Created :
 
           ```
 
+[3]:./call-bind-apply/bind.js "bind example"
+
 ##### **Adding functions to the Constructor function vs to the Prototype**
 
 ---
@@ -557,4 +559,4 @@ If we attach the same , `sayName` function to the prototype of cat , then all ob
 cat , will have reference to the same function, hence the space for a new function will be saved , plus DRY
 principle will be followed.
 
-[3]:./call-bind-apply/bind.js "bind example"
+#### Prototype Chain
