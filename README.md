@@ -383,7 +383,7 @@ Actual Object Created :
               the first argument is the thing you
               want this to be bound to and the next few arguments are the original argument variables of the function that are to be called
 
-            Eg : 
+            Eg 1 : 
             
             function add(a,b){
                    return a+b
@@ -397,6 +397,20 @@ Actual Object Created :
               and third arguments are the args 
               that the function was called
               with
+
+              ----
+
+              Eg 2 : 
+
+              Using call() to invoke a 
+              method allows us to 
+              "borrow" a method
+              from one object --
+              then use it for
+              another object!
+              Check out the
+              following object,
+              mockingbird:
 
      2. Apply ( )
      3. Bind ( )
