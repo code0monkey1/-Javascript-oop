@@ -11,6 +11,10 @@ console.log(this)
 
 const mockingbird={
    title:"To kill a Mockingbird",
-   
-
+   describe:function(){
+    console.log(` ${this.title} is a classic novel`)
+   }
 }
+
+
+mockingbird.describe()
