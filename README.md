@@ -383,8 +383,9 @@ Actual Object Created :
 
     ```javascript
       
-                      
-     eg :
+     function add(a,b){
+           return a+b
+      }
         
                                  
     ```
