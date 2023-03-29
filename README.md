@@ -578,6 +578,11 @@ will have a new sayName function created for it.
     sayName function to the constructor function, 
     so every object created using new Cat() , 
     will have a new sayName function created for it.
+
+    const myCat = new Cat();
+
+    print(myCat) 
+   > this will not have sayName() function defined. As it's attached to the prototype, and not this specific object
   
 #### Prototype Chain
 
