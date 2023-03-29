@@ -11,12 +11,10 @@ function invokeTwice(cb) {
   
   cb()
   cb()
-
 }
 
+const bound = dog.growOneYear.bind(dog)
 
-invokeTwice(function(){
-  dog.growOneYear()
-})
+invokeTwice(bound)
 
 console.log("Dog's age is",dog.age)
