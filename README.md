@@ -533,4 +533,18 @@ Actual Object Created :
 
           ```
 
+##### Adding functions to the constructor vs prototype
+
+```javascript
+function Cat(name) {
+ this.lives = 9;
+ this.name = name;
+
+ this.sayName = function () {
+   console.log(`Meow! My name is ${this.name}`);
+ };
+}
+
+```
+
 [3]:./call-bind-apply/bind.js "bind example"
