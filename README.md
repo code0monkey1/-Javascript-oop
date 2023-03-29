@@ -379,25 +379,24 @@ Actual Object Created :
 
    ---
 
-     + Call - This is called on a function, where
+     1. Call - This is called on a function, where
               the first argument is the thing you
               want this to be bound to and the next few arguments are the original argument variables of the function that are to be called
 
-    ```javascript
-      
-       function add(a,b){
-             return a+b
-        }
-        
-        const result = add.call(this,2,4)
-             // 6 
-  
-        Here ,the first argument is 
-        the context of this, the second 
-        and third arguments are the args 
-        that the function was called with
-                                 
-    ```
+            Eg : 
+            
+            function add(a,b){
+                   return a+b
+                  }
 
-     + Apply ( )
-     + Bind ( )
+              const result = add.call(this,2,4)
+                           // 6 
+                
+              Here ,the first argument is 
+              the context of this, the second 
+              and third arguments are the args 
+              that the function was called
+              with
+
+     2. Apply ( )
+     3. Bind ( )
