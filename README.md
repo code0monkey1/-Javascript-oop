@@ -643,6 +643,10 @@ console.log(inherited);
 
 >Using this method, you can confirm if a particular object serves as the prototype of another object.
 
+#### Object.getPrototypeOf()
+
+>If the prototype of an object is unknown , then to get the prototype of an object , you use this function
+
 ---
 
 [See isPrototypeOf and getPrototypeOf in Action][4]
