@@ -643,4 +643,10 @@ console.log(inherited);
 
 >Using this method, you can confirm if a particular object serves as the prototype of another object.
 
-[][]
+---
+
+[See isPrototypeOf and getPrototypeOf in Action][4]
+
+---
+
+[4]:./oop/is_get_PrototypeOf.js

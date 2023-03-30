@@ -7,7 +7,7 @@ function Mouse() {
   this.favoriteFood = 'cheese';
 }
 
-Mouse.prototype=rodent
+Mouse.prototype=rodent // placed rodent as mouse's prototype
 
 const ralph = new Mouse();
 
