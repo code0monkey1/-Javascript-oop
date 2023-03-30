@@ -50,3 +50,15 @@ const car = {
 const driverBound= driver.displayName.bind(car)
 
 invokeTwice(driverBound)
+
+
+const bar = {
+  numberOfDoors: 4,
+  drive: function () {
+     console.log(`Get in one of the ${this.numberOfDoors} doors, and let's go!`);
+  }
+};
+
+const letsRoll = bar.drive;
+
+letsRoll();
