@@ -650,3 +650,29 @@ console.log(inherited);
 ---
 
 [4]:./oop/is_get_PrototypeOf.js
+
+---
+
+#### The Constructor Property
+
+> Each time an object is created, a special property is assigned to it under the hood: constructor
+
+```javascript
+function Longboard() {
+  this.material = 'bamboo';
+}
+
+const board = new Longboard();
+
+If we access board's 
+constructor property,
+ we should see the 
+original constructor
+ function itself:
+
+console.log(board.constructor);
+
+// function Longboard() {
+//   this.material = 'bamboo';
+// }
+```
