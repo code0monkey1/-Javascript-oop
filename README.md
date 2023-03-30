@@ -691,3 +691,7 @@ notation , then the constructor is always `Object`
       
       console.log(rodent.constructor);
       // function Object() { [native code] }
+
+---------------------------------------
+
+## Prototypal Inheritance: Subclasses
