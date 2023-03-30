@@ -16,4 +16,9 @@ const result = rodent.isPrototypeOf(ralph);
 console.log(result);
 // true
 
-console.log("Prototype of Ralph",Object.getPrototypeOf(ralph))
+
+
+
+//---
+
+console.log("Prototype of Ralph",Object.getPrototypeOf(ralph)) // this will give rodent
