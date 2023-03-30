@@ -699,3 +699,5 @@ notation , then the constructor is always `Object`
 ---------------------------------------
 
 ## Prototypal Inheritance: Subclasses
+
+--- pending ---
