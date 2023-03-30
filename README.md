@@ -676,3 +676,14 @@ console.log(board.constructor);
 //   this.material = 'bamboo';
 // }
 ```
+
+But when we create an object using the literal
+notation , then the constructor is always `Object`
+
+      const rodent = {
+        favoriteFood: 'cheese',
+        hasTail: true
+      };
+      
+      console.log(rodent.constructor);
+      // function Object() { [native code] }
