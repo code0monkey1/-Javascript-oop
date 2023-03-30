@@ -61,4 +61,4 @@ const bar = {
 
 const letsRoll = bar.drive;
 
-letsRoll();
+letsRoll.apply(bar)
