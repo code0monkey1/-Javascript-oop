@@ -569,6 +569,8 @@ will have a new sayName function created for it.
     don't have to update all objects individually
     should be decide to change a method.
 
+```javascript
+
       function Cat(name) {
        this.name=name;
      
@@ -577,6 +579,8 @@ will have a new sayName function created for it.
       Cat.prototype.sayName=function () {
        console.log(`Meow! My name is ${this.name}`);
      };
+
+```
 
     In this example , you're attaching the 
     sayName function to the constructor function, 
