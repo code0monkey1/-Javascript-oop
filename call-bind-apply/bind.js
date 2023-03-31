@@ -63,6 +63,6 @@ const letsRoll = bar.drive;
 
 letsRoll() // will return undefined
 
-letsRoll.bind(bar)() // will be bound to the value of bar
+bar.drive() // will be bound to the value of bar
 
 
