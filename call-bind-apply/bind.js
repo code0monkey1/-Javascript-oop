@@ -66,8 +66,6 @@ letsRoll() // will return undefined
 // bar.drive() // will be bound to the value of bar
 
 
-
-
 class MyClass {
   name = "MyClass";
   getName() {
@@ -82,3 +80,4 @@ const obj = {
  
 // Prints "obj", not "MyClass"
 console.log(obj.getName());
+
